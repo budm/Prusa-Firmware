@@ -8242,7 +8242,7 @@ static void settingsAutoDeplete()
 
 #ifdef PRUSA_SN_SUPPORT
   void WorkaroundPrusaSN() {
-    const char *SN = PSTR("CZPXInvalidSerialNr");
+    const char *SN = PSTR("CZPXInvalidSerialNr"); //insert random serial soon, first dump from Johnny with Repetier M503
     for (uint8_t i = 0; i < 20; i++) {
       eeprom_update_byte((uint8_t*)EEPROM_PRUSA_SN + i, pgm_read_byte(SN++));
     }

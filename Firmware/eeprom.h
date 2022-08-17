@@ -7,6 +7,8 @@
  
  //! _This is a EEPROM table of currently implemented in Prusa firmware (dynamically generated from doxygen)._
 
+ /** future note about serial + M503 **/
+
 
 #ifndef EEPROM_H
 #define EEPROM_H
