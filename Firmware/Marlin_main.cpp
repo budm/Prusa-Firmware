@@ -798,7 +798,7 @@ int uart_putchar(char c, FILE *)
 void lcd_splash()
 {
 	lcd_clear(); // clears display and homes screen
-	lcd_puts_P(PSTR("\n Original Prusa i3\n   Prusa Research"));
+	lcd_printf_P(PSTR("\n Cloned Prusa i3\n   Build Based on \n%20.20S"), PSTR(FW_VERSION));
 }
 
 
